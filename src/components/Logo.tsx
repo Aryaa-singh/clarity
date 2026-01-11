@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import { type HTMLAttributes } from 'react';
 
 interface LogoProps extends HTMLAttributes<HTMLDivElement> {
     onClick?: () => void;
