@@ -1,0 +1,197 @@
+/* Components */
+
+/* Layout */
+.layout-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card - Glassmorphism style */
+.card {
+    background-color: var(--color-bg-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-8);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-medium);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--color-border-hover);
+}
+
+/* Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--radius-sm);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--text-sm);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: var(--color-text-primary);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background-color: var(--color-bg-glass);
+    backdrop-filter: blur(8px);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-bg-surface);
+    border-color: var(--color-border-hover);
+}
+
+.btn-ghost {
+    color: var(--color-text-secondary);
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-glass);
+}
+
+.btn-lg {
+    padding: var(--spacing-4) var(--spacing-8);
+    font-size: var(--text-base);
+    border-radius: var(--radius-md);
+}
+
+/* Input */
+.input {
+    width: 100%;
+    padding: var(--spacing-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-glass);
+    backdrop-filter: blur(4px);
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+    color: var(--color-text-primary);
+}
+
+.input:focus {
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-surface);
+    box-shadow: 0 0 0 4px var(--color-accent-soft);
+    outline: none;
+}
+
+/* Mode Specifics */
+.mode-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--radius-lg);
+}
+
+.mode-card h2 {
+    margin-bottom: var(--spacing-2);
+}
+
+/* Slider Overrides */
+input[type="range"].slider {
+    -webkit-appearance: none;
+    height: 6px;
+    background: var(--color-border);
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="range"].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+input[type="range"].slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-2);
+}
+
+.mb-4 {
+    margin-bottom: var(--spacing-4);
+}
+
+.mb-8 {
+    margin-bottom: var(--spacing-8);
+}
+
+.mb-12 {
+    margin-bottom: var(--spacing-12);
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.gap-2 {
+    gap: var(--spacing-2);
+}
+
+.font-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.font-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-3xl {
+    font-size: var(--text-3xl);
+}
